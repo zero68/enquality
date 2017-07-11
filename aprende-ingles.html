@@ -1,0 +1,635 @@
+<!DOCTYPE html>
+<html lang="es">
+<html>
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+	<meta name="description" content="EnQuality es un curso de inglés con sucursales ubicadas en el norte y sur de Quito y en el Valle de los Chillos, Sangolquí. Curso de inglés divertido, fácil con un método innovador. Cursos de inglés para niños y adultos. TOEFL y certificado del ministerio de educación.">
+	<meta name="keywords" content="curso de ingles, curso de ingles en Quito, enquality, curso de ingles norte de Quito, curso de ingles sur de Quito, curso de ingles en el valle de los chillos, curso de ingles en sangolqui, curso de ingles con certificado, certificado del ministerio, curso de ingles TOEFL, curso para niños, curso para adultos">
+
+	<title>Cursos de Inglés en el norte y sur de Quito y Valle de los Chillos | EnQuality</title>
+	
+	<!-- Styles -->
+	<link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/modal.css">
+	<link rel="stylesheet" href="css/promo.css">
+    <link rel="stylesheet" href="css/error.css">
+	<link rel="stylesheet" href="css/responsive.css">
+	<link rel="stylesheet" href="css/prettyPhoto.css">
+	<link rel="stylesheet" type="text/css" href="css/settings.css" media="screen"/>
+	<link rel="stylesheet" href="css/color-scheme/orange.css">
+
+	<!-- Google font for vacational curses -->
+	<link href="https://fonts.googleapis.com/css?family=Gloria+Hallelujah" rel="stylesheet">
+	<!-- End of Google font import -->
+
+    <!-- Favicons
+=================================================== -->
+<link rel="shortcut icon" href="img/favicon.ico">  
+
+
+
+
+	
+	<!-- Base JS -->
+   
+    <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-43792718-1', 'enquality.com');
+  ga('send', 'pageview');
+
+</script>
+	<script src="js/jquery-1.9.1.min.js"></script>
+	<script src="js/main.js"></script>
+	
+	<!-- Revolution Slider -->
+	<script src="js/jquery.themepunch.plugins.min.js"></script>
+	<script src="js/jquery.themepunch.revolution.min.js"></script>
+	<script src="js/revolution-slider-options.js"></script>
+	
+	<!-- Prety photo -->
+	<script src="js/jquery.prettyPhoto.js"></script>
+	<script>
+		$(document).ready(function(){
+			$("a[rel^='prettyPhoto']").prettyPhoto();
+		});
+	</script>
+    <script type="text/javascript" src="form.js"></script>
+</head>
+
+<body>
+
+
+		<!-- Call the modal by clicking this link -->
+		
+		<!-- A modal with its content -->
+		<section class="semantic-content" id="modal-text"
+				tabindex="-1" role="dialog" aria-labelledby="modal-label" aria-hidden="true">
+
+			<div class="modal-inner">
+				<header>
+					<h2 id="modal-label">Tan pronto nos llegue su mensaje un agente comercial se comunicará con usted. </h2>
+                    
+				</header>
+
+				<div class="modal-content">
+			    <img src="popup/sliderform.jpg"> 
+                	<div class="form-message"></div>
+						<!-- Form -->
+				<form onsubmit="return validar();" class="contact-form" action="contact-question.php" method="post" enctype="multipart/form-data" style="margin-bottom: 10px;">
+				<div class="input-wrap">
+					<i class="icon-user"></i>
+					<input class="field-name" type="text" id="nombre" name="cf_name" placeholder="Nombres" onfocus="entroEnFoco(this)" onblur="salioDeFoco(this); revisarObligatorio(this); revisarLongitud(this, 8)">
+				</div>
+                
+                 <div class="input-wrap">
+					<i class="icon-envelope"></i>
+					<input class="field-edad" type="text" id="email" name="cf_email" placeholder="E-mail" onfocus="entroEnFoco(this)" onblur="salioDeFoco(this); revisarObligatorio(this); revisarEmail(this);">
+				</div>
+                
+                <div class="input-wrap">
+					<i class="icon-phone"></i>
+					<input class="field-telefono" type="text" id="celular"  name="cf_celular" placeholder="Telefono (celular)" onfocus="entroEnFoco(this)" onblur="salioDeFoco(this); revisarNumerico(this); revisarObligatorio(this); revisarLongitud(this, 7)">
+				</div>
+				<div class="input-wrap">
+					<p>¿En qué sucursal te gustaría estudiar?</p>
+					<input style="height:auto;width:auto" type="radio" name="sucursal" value="diez" checked> 10 de Agosto<br>
+					<input style="height:auto;width:auto" type="radio" name="sucursal" value="caro"> La Carolina<br>
+					<input style="height:auto;width:auto" type="radio" name="sucursal" value="villa"> Villaflora<br>
+					<input style="height:auto;width:auto" type="radio" name="sucursal" value="chillos"> Los Chillos<br>
+				</div>
+				<div class="textarea-wrap">
+					<i class="icon-pencil"></i>
+					<textarea class="field-comments" id="mensaje"  name="cf_message" placeholder="Comentario" onfocus="entroEnFoco(this)" onblur="salioDeFoco(this); revisarObligatorio(this); revisarLongitud(this, 18)"></textarea>
+				</div>
+				<input class="btn-submit btn colored" type="submit" value="Enviar mensaje">
+			</form>
+						<!-- End Form -->
+					</div>
+                
+                
+                </div>
+
+			</div>
+
+			<!-- Use Hash-Bang to maintain scroll position when closing modal -->
+			<a href="#!" class="modal-close" title="Close this modal"
+					data-dismiss="modal">&times;</a>
+		</section>
+
+		<script src="js/modal.js"></script><!-- JS for Modal -->
+
+<div class="main desk boxed">
+	<!-- TOP BAR 
+	============================================= -->
+	<div class="b-top-bar">
+		<div class="layout">
+			<!-- Some text -->
+			<div class="wrap-left">
+				<span class="top-bar-text">Registro Ministerial 0231 DINEPP</span>
+			</div>
+			<div class="wrap-right">
+				<!-- Phone -->
+                    <img src="img/elements/logo-2.jpg">
+                    <img src="img/elements/logo-3.jpg">
+
+				<!-- Social Icons -->
+				
+				<!-- End Social Icons -->
+			</div>
+		</div>
+	</div>
+	<!-- END TOP BAR 
+	============================================= -->
+	
+
+	<!-- HEADER 
+	============================================= -->
+	<div class="header">
+		<div class="layout clearfix"> 
+			<div class="mob-layout wrap-left">
+				<!-- Logo -->
+				<a href="aprende-ingles.html" class="logo">
+                <object type="application/x-shockwave-flash" data="img/enquality.swf" width="180" height="100">
+    <param name="movie" value="img/enquality.swf" />
+    <param name="quality" value="high" />
+    <img src="img/logo.png" width="180" height="100" alt="Imagen en sustitución de flash" />
+</object>
+               </a>
+				<!-- Mobile Navigation Button -->
+<div class="btn-menu icon-reorder"></div>
+				<!-- Navigation -->
+				<ul class="menu">
+					<!-- Item 1 -->
+					<li>
+						<a href="aprende-ingles.html" class="active">Inicio</a>
+
+						<ul class="submenu">
+						
+							<li><a href="nuestra-institucion.html">Sobre Nosotros</a></li>
+						</ul>
+					</li>
+
+                    <!-- Item 1 --> <li>
+						<a href="#">TOEFL</a>
+
+						<ul class="submenu">
+						
+							<li><a href="preparacion-examen-toefl.html">Acerca del examen de TOEFL</a></li>
+						</ul>
+					</li>
+					<!-- Item 2 -->
+					<li>
+						<a href="cursosInglesQuito.html" class="call-modal">Cursos de Inglés</a>
+					</li>
+
+					<!-- Item 3 -->
+					<li>
+						<a href="#">Our Activities</a>
+
+							<ul class="submenu">
+							<li><a href="nuestros-estudiantes.html">Galeria</a></li>	
+						</ul>
+					</li>
+
+					<!-- Item 6 -->
+					<li>
+						<a href="#"><i class="icon-envelope-alt"></i>Contacto</a>
+
+						<ul class="submenu">
+							<li><a href="norte/parque-la-carolina.html">Carolina</a></li>
+                            <li><a href="centro-norte/10-de-agosto.html">10 de Agosto</a></li>
+                            <li><a href="valle-de-los-chillos/sangolqui.html">Valle de los Chillos</a></li>
+                              <li><a href="sur/villaflora.html">Villaflora</a></li>
+						</ul>
+					</li>
+<li>
+							<a href="ingles-para-ninos.html" class="call-modal" title="Clicking this link shows the modal">Niños</a>
+				  </li>
+                    <li>
+                        <a href="ingles-jovenes-adultos.html" class="call-modal">Jóvenes y adultos</a> 
+                    </li>
+
+                
+                </ul>
+		  </div>
+			
+		</div>
+		<!-- Mobile Navigation -->
+		<ul class="mob-menu">
+			<!-- Item 1 -->
+			<li>
+				<div>
+					<a href="aprende-ingles.html" class="active">Inicio</a>
+					<span class="btn-submenu"></span>
+				</div>
+
+				<ul class="mob-submenu">
+					
+					<li><div> <a href="nuestra-institucion.html">Sobre Nosotros</a> </div></li>
+				</ul>
+			</li>
+			<!-- End Item 1 -->
+			<!-- Item 2 -->
+			<li>
+				<div>
+					<a href="#">Programas</a>
+					<span class="btn-submenu"></span>
+				</div>
+
+				<ul class="mob-submenu">
+				<li><div> <a href="cursosInglesQuito.html">Ventajas, Metodologia </a> </div></li>
+					
+				</ul>
+			</li>
+			<!-- End Item 2 -->
+			<!-- Item 3 -->
+			<li>
+				<div>
+					<a href="#">Our Activities</a>
+					<span class="btn-submenu"></span>
+				</div>
+
+				<ul class="mob-submenu">
+					<li><div> <a href="nuestros-estudiantes.html">Galeria</a> </div></li>
+					
+					</li>
+				</ul>
+			</li>
+		
+			
+			<!-- Item 6 -->
+			<li>
+				<div>
+					<a href="#">Contacto</a>
+					<span class="btn-submenu"></span>
+				</div>
+
+				<ul class="mob-submenu">
+					<li><div> <a href="norte/parque-la-carolina.html">Carolina</a> </div></li>
+                    <li><div> <a href="centro-norte/10-de-agosto.html">10 de Agosto</a></div></li>
+                    <li><div> <a href="valle-de-los-chillos/sangolqui.html">Valle de los Chillos</a> </div></li>
+                    <li><div> <a href="sur/villaflora.html">Villaflora</a> </div></li>
+				</ul>
+			</li>
+			<!-- End Item 6 -->
+		</ul>
+		<!-- End Mobile Navigation -->
+	</div>
+	<!-- END HEADER 
+	============================================= -->
+
+	<!-- REVOLUTION SLIDER
+	============================================= -->
+	<div class="fullwidthbanner-container top-shadow">
+		<div class="fullwidthbanner">
+			<ul>
+ 				<!-- Slide curso vacacional -->
+				<li data-masterspeed="300" data-slotamount="3" data-transition="fade">
+					<!-- Main Image -->
+					<img alt="" src="img/slider/Slider-8.jpg">
+
+					<!-- Captions -->
+					<div class="tp-caption sfr" data-easing="easeOutExpo" data-speed="700" data-start="600" data-x="520" data-y="90">
+						<img alt="" src="img/slider/curso-vacacional.png">
+					</div>
+					<div class="tp-caption sfb" data-easing="easeOutExpo" data-speed="1700" data-start="1700" data-x="430" data-y="10">
+						<img alt="" src="img/slider/summer-sun.png">
+					</div>
+					<div class="tp-caption m-3-2em m-text-black m-semibold sfr" data-easing="easeOutExpo" data-speed="700" data-start="1400" data-x="40" data-y="130">
+						<span style="font-family:'Gloria Hallelujah';color:#950b0b">Cursos vacacionales</span>
+					</div>
+					<div class="tp-caption m-text-black sfr cool-font" data-easing="easeOutExpo" data-speed="1000" data-start="1600" data-x="40" data-y="185">
+						<span style="color:#075096">¡Diviértete aprendiendo inglés!</span><br><br>
+							<span style="margin-bottom:5px;color:#ff7f2a">&nbsp;&nbsp;&nbsp;&nbsp;Cooking classes</span>
+							<span style="margin-bottom:5px;color:#075096">&nbsp;&nbsp;&nbsp;&nbsp;Pizza party</span>
+							<span style="margin-bottom:5px;color:#950b0b">&nbsp;&nbsp;&nbsp;&nbsp;Juegos</span>
+							<span style="margin-bottom:5px;color:#ff7f2a">&nbsp;&nbsp;&nbsp;&nbsp;Música</span>
+							<span style="margin-bottom:5px;color:#075096">&nbsp;&nbsp;&nbsp;&nbsp;Paseos</span>
+					</div>
+					
+					<!-- Button -->
+					<div class="tp-caption sfb" data-x="230" data-y="350" data-speed="700" data-start="1700" data-easing="easeInOutExpo">
+						<a class="btn colored" href="#modal-text" class="call-modal" title="naciones">
+							Pedir información<i class="icon-chevron-sign-right" style="margin: 0 0 0 7px;"></i>
+						</a>
+					</div>
+				</li>
+				<!-- End of slide curso vacacional -->
+               
+                	<!-- Slide 2 -->
+				<li data-masterspeed="300" data-slotamount="3" data-transition="fade">
+				<!-- Main Image -->
+				<img alt="" src="img/slider/Slider-8.jpg">
+				<!-- End Main Image -->
+				<!-- Captions -->
+				<div class="tp-caption sfr" data-easing="easeOutExpo" data-speed="700" data-start="600" data-x="640" data-y="9">
+					<img alt="" src="img/slider/student2.png">
+				</div>
+			
+				<div class="tp-caption sfb" data-easing="easeOutExpo" data-speed="1700" data-start="1700" data-x="360" data-y="84">
+					<img alt="" src="img/slider/telefono.png">
+				</div>
+				
+				<div class="tp-caption m-3-2em m-text-black m-semibold sft" data-easing="easeOutExpo" data-speed="700" data-start="1400" data-x="40" data-y="130">
+					<span>Aprende Inglés en Quito</span>
+				</div>
+				<div class="tp-caption m-3-2em m-text-black m-semibold sft" data-easing="easeOutExpo" data-speed="700" data-start="1600" data-x="40" data-y="185">
+					<span>LLámanos Ya!! </span>
+				</div>
+               <div class="tp-caption sfb" data-x="40" data-y="250" data-speed="700" data-start="1700" data-easing="easeInOutExpo">
+					<a class="btn colored" href="centro-norte/10-de-agosto.html" class="call-modal" title="Clicking this link shows the modal">10 de Agosto<i class="icon-chevron-sign-right" style="margin: 0 0 0 7px;"></i></a></div>
+                    
+                    <div class="tp-caption sfb" data-x="210" data-y="250" data-speed="700" data-start="1700" data-easing="easeInOutExpo">
+					<a class="btn colored" href="norte/parque-la-carolina.html" class="call-modal" title="naciones">Carolina<i class="icon-chevron-sign-right" style="margin: 0 0 0 7px;"></i></a></div>
+                    
+                    <div class="tp-caption sfb" data-x="40" data-y="300" data-speed="700" data-start="1700" data-easing="easeInOutExpo">
+					<a class="btn colored" href="valle-de-los-chillos/sangolqui.html" class="call-modal" title="Clicking this link shows the modal">Valle de los chillos<i class="icon-chevron-sign-right" style="margin: 0 0 0 7px;"></i></a></div>
+                    
+                    <div class="tp-caption sfb" data-x="230" data-y="300" data-speed="700" data-start="1700" data-easing="easeInOutExpo">
+					<a class="btn colored" href="sur/villaflora.html" class="call-modal" title="naciones">Villaflora<i class="icon-chevron-sign-right" style="margin: 0 0 0 7px;"></i></a></div>
+				
+               
+				
+				<!-- End Captions -->
+				</li>
+                
+                
+                <!-- End Slide 2 -->
+                <li data-masterspeed="300" data-slotamount="2" data-transition="fade">
+				<!-- Main Image -->
+				<img alt="" src="img/slider/Slider-8.jpg">
+				<!-- End Main Image -->
+				
+				<!-- Captions -->
+				<div class="tp-caption sfr" data-easing="easeOutExpo" data-speed="700" data-start="600" data-x="640" data-y="9">
+					<img alt="" src="img/slider/student.png">
+				</div>
+                
+                <div class="tp-caption sfb" data-easing="easeOutExpo" data-speed="1700" data-start="1700" data-x="360" data-y="144">
+					<img alt="" src="img/slider/speak.png">
+				</div>
+				
+				
+				<div class="tp-caption m-3-2em m-text-black m-semibold sft" data-easing="easeOutExpo" data-speed="700" data-start="1400" data-x="40" data-y="130">
+					<span>Mejora tu inglés en Quito</span>
+				</div>
+				<div class="tp-caption m-3-2em m-text-black m-semibold sft" data-easing="easeOutExpo" data-speed="700" data-start="1600" data-x="40" data-y="170">
+					<span>No pierdas más tiempo...</span>
+				</div>
+                <div class="tp-caption m-1-8em m-text-black sfr" data-easing="easeOutExpo" data-speed="700" data-start="1600" data-x="40" data-y="210">
+					<span>Solo háblalo y domínalo</span>
+				</div>
+				<div class="tp-caption sfb" data-x="40" data-y="250" data-speed="700" data-start="1700" data-easing="easeInOutExpo">
+					<a class="btn colored" href="#modal-text" class="call-modal" title="Clicking this link shows the modal">Leer más<i class="icon-chevron-sign-right" style="margin: 0 0 0 7px;"></i></a>
+                    
+				</div>
+				<!-- End Captions -->
+				</li>
+                
+                <!-- Slide 2 -->
+				<li data-masterspeed="300" data-slotamount="3" data-transition="fade">
+				<!-- Main Image -->
+				<img alt="" src="img/slider/Slider-8.jpg">
+				<!-- End Main Image -->
+				<!-- Captions -->
+				<div class="tp-caption sfr" data-easing="easeOutExpo" data-speed="700" data-start="600" data-x="640" data-y="9">
+					<img alt="" src="img/slider/women.png">
+				</div>
+				<div class="tp-caption sfb" data-easing="easeOutExpo" data-speed="700" data-start="900" data-x="369" data-y="327">
+					<img alt="" src="img/slider/graph-2.png">
+				</div>
+				<div class="tp-caption sfb" data-easing="easeOutExpo" data-speed="700" data-start="1000" data-x="433" data-y="298">
+					<img alt="" src="img/slider/graph-3.png">
+				</div>
+				<div class="tp-caption sfb" data-easing="easeOutExpo" data-speed="700" data-start="1100" data-x="511" data-y="261">
+					<img alt="" src="img/slider/graph-4.png">
+				</div>
+				<div class="tp-caption sfb" data-easing="easeOutExpo" data-speed="700" data-start="1200" data-x="579" data-y="236">
+					<img alt="" src="img/slider/graph-5.png">
+				</div>
+				<div class="tp-caption sfb" data-easing="easeOutExpo" data-speed="700" data-start="1300" data-x="651" data-y="197">
+					<img alt="" src="img/slider/graph-6.png">
+				</div>
+				<div class="tp-caption sfb" data-easing="easeOutExpo" data-speed="1700" data-start="1700" data-x="360" data-y="24">
+					<img alt="" src="img/slider/graph-7.png">
+				</div>
+				<div class="tp-caption fade" data-easing="easeOutExpo" data-speed="700" data-start="800" data-x="369" data-y="387">
+					<img alt="" src="img/slider/graph-1.jpg">
+				</div>
+					
+				<div class="tp-caption m-3-2em m-text-black m-semibold sft" data-easing="easeOutExpo" data-speed="700" data-start="1400" data-x="40" data-y="130">
+					<span>Mejora tus perspectivas</span>
+				</div>
+				<div class="tp-caption m-1-8em m-text-black m-semibold sft" data-easing="easeOutExpo" data-speed="700" data-start="1600" data-x="40" data-y="170">
+					<span> profesionales e incluso aumenta tus ingresos</span>
+				</div>
+                <div class="tp-caption m-1-8em m-text-black sfr" data-easing="easeOutExpo" data-speed="700" data-start="1600" data-x="40" data-y="210">
+					<span>TOEFL, IELTS</span>
+				</div>
+				<div class="tp-caption sfb" data-x="40" data-y="250" data-speed="700" data-start="1700" data-easing="easeInOutExpo">
+					<a class="btn colored" href="#modal-text" class="call-modal" title="Clicking this link shows the modal">Leer más<i class="icon-chevron-sign-right" style="margin: 0 0 0 7px;"></i></a>
+				<!-- End Captions -->
+				</li>
+                
+				
+               
+				<!-- Slide 3 -->
+				<li data-masterspeed="300" data-slotamount="4" data-transition="fade">
+				<!-- Main Image -->
+				<img alt="Estudia enQuality" src="img/slider/estudiante-slider.jpg">
+				<!-- End Main Image -->
+				<!-- Captions -->
+				<div class="tp-caption m-3-2em m-text-black m-semibold sft" data-easing="easeOutExpo" data-speed="700" data-start="1400" data-x="40" data-y="130">
+					<span>Métodos de Aprendizaje</span>
+				</div>
+				<div class="tp-caption m-1-8em m-text-black sfr" data-easing="easeOutExpo" data-speed="700" data-start="1600" data-x="40" data-y="185">
+					<span>Para niños a partir de los 6 años</span>
+				</div>
+				<div class="tp-caption sfb" data-x="40" data-y="230" data-speed="700" data-start="1700" data-easing="easeInOutExpo">
+					<a class="btn colored" href="cursosInglesQuito.html">Leer más<i class="icon-chevron-sign-right" style="margin: 0 0 0 7px;"></i></a>
+				</div>
+				<!-- End Captions -->
+				</li>
+				<!-- End Slide 4 -->				
+
+			</ul>
+		</div>
+	</div>
+	<!-- END REVOLUTION SLIDER
+	============================================= -->
+
+	<!-- FEATURED CONTENT
+	============================================= -->
+    
+	<div class="content-featured">
+		<div class="layout">
+			<p>
+				 En Quality le ofrece los mejores métodos y cursos de aprendizaje del idioma Inglés en Quito 
+			</p>
+		</div>
+	</div>
+	<!-- END FEATURED CONTENT
+	============================================= -->
+
+	<!-- CONTENT 
+	============================================= -->
+	<div class="content shortcodes gray-content" style="padding-bottom: 10px;">
+		<div class="layout" style="padding-bottom: 1px;">
+			<div class="row">
+				<div class="row-item col-1_3">
+					<!-- Icon Box -->
+					<div class="icon-box medium" style="margin-bottom: 25px;">
+						<i class="icon-youtube-play medium light"></i>
+						<h4><a href="#" class="dark-link">Comerciales</a></h4>
+						
+						<p><a href="comerciales.html" class="btn colored" style="margin-bottom: 0;">Ver</a></p>
+					</div>
+					<!-- End Icon Box -->
+				</div>
+				<div class="row-item col-1_3">
+					<!-- Icon Box -->
+					<div class="icon-box medium" style="margin-bottom: 25px;">
+						<i class="icon-file-text medium light"></i>
+						<h4><a href="#" class="dark-link">Testimonios</a></h4>
+						
+						<p><a href="testimonios.html" class="btn colored" style="margin-bottom: 0;">Ver</a></p>
+					</div>
+					<!-- End Icon Box -->
+				</div>
+				<div class="row-item col-1_3">
+					<!-- Icon Box -->
+					<div class="icon-box medium" style="margin-bottom: 25px;">
+						<i class="icon-usd medium light"></i>
+						<h4><a href="#" class="dark-link">Cursos desde $85 dólares</a></h4>
+						
+						<p><a href="#modal-text" title="Clicking this link shows the modal" class="btn colored" style="margin-bottom: 0;">Llenar Formulario</a></p>
+                        
+					</div>
+					<!-- End Icon Box -->
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+    
+
+	<!-- FOOTER 
+	============================================= -->
+	<div class="footer">
+		<!-- Widget Area -->
+		<div class="b-widgets">
+			<div class="layout">
+				<div class="row">
+					<!-- Links -->
+					<div class="row-item col-1_4">
+						<h3>Mapa de Sitio</h3>
+						<ul class="b-list just-links m-dark">
+							<li><a href="aprende-ingles.html">Inicio</a></li>
+							<li><a href="cursosInglesQuito.html">Programas</a></li>
+							<li><a href="nuestros-estudiantes.html">Our Activities</a></li>
+							<li><a href="comerciales.html">Look Comerciales</a></li>
+							<li><a href="#modal-text" class="call-modal" title="Clicking this link shows the modal">Cursos desde $85 dólares</a></li>
+                            <li><a href="testimonios.html">Testimonios</a></li>
+							<li><a href="#modal-text" class="call-modal" title="Clicking this link shows the modal">Contacto</a></li>
+						</ul>
+					</div>
+					<!-- End Links -->
+					<!-- Latest Tweets -->
+					<div class="row-item col-1_4">
+						<h3>Ultimos Tweets</h3>
+						<div class="b-twitter m-footer">
+							<ul>
+								<!-- Twitter Message 1 -->
+								<li>
+									<span>Love is not about fancy dates or showing off. <a href="https://twitter.com/EnQuality" target="new" class="link">https://twitter.com/EnQuality</a></span>
+									<span class="twit-date">Feb 13, 2014</span>
+								</li>
+								<!-- Twitter Message 2 -->
+								<li>
+									<span>When you are happy, :) you enjoy the music..<a href="https://twitter.com/EnQuality" target="new" class="link">https://twitter.com/EnQuality</a></span>
+									<span class="twit-date">Feb 13, 2014</span>
+								</li>
+                                
+							</ul>
+						</div>
+					</div>
+					<!-- End Latest Tweets -->
+					<!-- Tag Cloud -->
+					<div class="row-item col-1_4">
+						<h3>Sucursales</h3>
+						<div class="b-tag-cloud m-dark">
+							<a href="norte/parque-la-carolina.html">Carolina</a>
+							<a href="centro-norte/10-de-agosto.html">10 de Agosto</a>
+							<a href="valle-de-los-chillos/sangolqui.html">Valle de los Chillos</a>
+							<a href="sur/villaflora.html">Villaflora</a>
+                            
+					     </div>
+                         <a href="http://contador-de-visitas.com"><img style="border: 0px solid ; display: inline;" alt="contador de visitas" 
+	src="http://contador-de-visitas.com/hit.php?id=1817206&counter=38"></a><br /><!-- fin codigo contador -->
+					</div>
+					<!-- End Tag Cloud -->
+					<!-- Contact Form -->
+					<div class="row-item col-1_4">
+						
+						<!-- Success Message -->
+						<div class="form-message"></div>
+						<!-- Form -->
+						<div class="icon-box medium" style="margin-bottom: 25px;">
+							<h4>¿Deseas conocer tu nivel de inglés?</h4>
+							<center><br><i class="icon-file-text medium light"></i></center><br>
+							<a href="http://englishofcourse.com/exams/login.html" class="btn colored" style="margin-bottom: 0;">Tomar examen</a>
+						</div>
+						<!-- End Form -->
+					</div>
+					<!-- End Contact Form -->
+				</div>
+			</div>
+		</div>
+		<!-- End Widget Area -->
+		<!-- Copyright Area -->
+		<div class="b-copyright">
+			<div class="layout">
+				<!-- Copyright Text -->
+				<span class="copy">Copyright © 2013 <a href="#">En Quality The Natural Expression</a>. All Right Reserved.</span>
+				<!-- Social Icons -->
+				<ul class="b-social bot">
+					<li>Síguenos en:</li>
+					<li><a class="fb" href="https://www.facebook.com/EnQuality" target="new"><i class="icon-facebook"></i></a></li>
+					<li><a class="tw" href="https://twitter.com/EnQuality" target="new"><i class="icon-twitter"></i></a></li>
+				</ul>
+			</div>
+
+			<!--+++++++++++++++++++++++ SCHEMA MICRODATA +++++++++++++++++++++++--!>
+			<div itemscope itemtype="http://schema.org/School">
+				<span itemprop="description" content="Curso de inglés en Quito, norte, sur y Valle de los Chillos, Sangolquí. Curso de inglés divertido, fácil con un método innovador. Cursos de inglés para niños y adultos. Preparación para TOEFL y certificado del ministerio de educación."></span>
+				<span itemprop="name" content="Enquality cursos de inglés en Quito"></span>
+				<div itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
+					<span itemprop="streetAddress" content="10 de Agosto y Eloy Alfaro">
+					<span itemprop="addressLocality" content="Quito"></span>
+					<span itemprop="addressCountry" content="Ecuador"></span>
+					<span itemprop="postalCode" content="593"></span>
+					<span itemprop="addressRegion" content="Pichincha"></span>
+				</div>
+				<span itemprop="url" content="http://curso-de-ingles.enquality.com/Quito/aprende-ingles.html"></span>
+				<span itemprop="telephone" content="593 2501293"></span>
+			</div>
+			<!--+++++++++++++++++++++ END SCHEMA MICRODATA +++++++++++++++++++++--!>
+			
+		</div>
+	</div>
+	<!-- END FOOTER 
+	============================================= -->
+	
+	
+
+<!-- END MAIN 
+============================================= -->
+</body>
+</html>
